@@ -14,7 +14,7 @@ const PostPage = ({name}) => {
   useEffect(()=>{
     const postData=async()=>{
       try{
-        const response=await axios.post("http://localhost:3000/post",obj);
+        const response=await axios.post("https://blogpage-m1bj.onrender.com/post",obj);
         navigate("/");
         setPostButtonClick(false);
       }

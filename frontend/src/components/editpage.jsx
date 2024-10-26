@@ -15,7 +15,7 @@ const EditPage = ({name}) => {
     useEffect(()=>{
         const EditPost=async()=>{
             try{
-                const response=await axios.patch(`http://localhost:3000/edit/${bId}`,editObj);
+                const response=await axios.patch(`https://blogpage-m1bj.onrender.com/edit/${bId}`,editObj);
                 navigate("/");
                 setEditButtonClick(false); 
             }

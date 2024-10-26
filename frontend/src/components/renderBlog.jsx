@@ -9,7 +9,7 @@ const RenderBlogs = () => {
   useEffect(()=>{
     const renderList=async()=>{
       try{
-        const response=await axios.get("http://localhost:3000/");
+        const response=await axios.get("https://blogpage-m1bj.onrender.com/");
         setResult(response.data);
       }
       catch(error){

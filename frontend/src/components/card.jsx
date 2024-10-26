@@ -10,7 +10,7 @@ function Card({id,title,content,author}) {
   useEffect(()=>{
     const deleteReq=async()=>{
       try{
-        const response=await axios.delete(`http://localhost:3000/delete/${bId}`);
+        const response=await axios.delete(`https://blogpage-m1bj.onrender.com/delete/${bId}`);
         navigate(0);
       }
       catch(error){
